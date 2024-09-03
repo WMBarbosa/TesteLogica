@@ -3,12 +3,11 @@ import java.util.Scanner;
 public class StringInvertida {
 
     public static void main(String[] args) {
-        // Receber a string do usuário
+
         Scanner scanner = new Scanner(System.in);
         System.out.print("Digite uma string: ");
         String texto = scanner.nextLine();
 
-        // Chamar a função para inverter a string
         String textoInvertido = inverterString(texto);
 
         // Resultado

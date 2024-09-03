@@ -5,15 +5,14 @@ public class SequenciaDeFibonacci {
 
     public static void main(String[] args) {
 
-    // Irá obter o número informado pelo usuário por meio do scanner
         Scanner leitura = new Scanner(System.in);
         System.out.print("Informe um número: ");
         int numero = leitura.nextInt();
 
-    // Calculará a sequência de Fibonacci até o número informado
+
         ArrayList<Integer> fibonacci = calcularSequenciaFibonacci(numero);
 
-    // Verificação de número para ver se pertence à sequência de Fibonacci
+
         if (isInFibonacciSequence(numero, fibonacci)) {
             System.out.println("O número " + numero + " pertence à sequência de Fibonacci.");
         } else {
@@ -21,7 +20,7 @@ public class SequenciaDeFibonacci {
         }
     }
 
-    // Função para calcular a sequência de Fibonacci até o número informado
+
     public static ArrayList<Integer> calcularSequenciaFibonacci(int numero) {
         ArrayList<Integer> fibonacci = new ArrayList<>();
         fibonacci.add(0);
@@ -40,7 +39,6 @@ public class SequenciaDeFibonacci {
         return fibonacci;
     }
 
-    // Função para verificar se um número pertence à sequência de Fibonacci
     public static boolean isInFibonacciSequence(int numero, ArrayList<Integer> fibonacci) {
         return fibonacci.contains(numero);
     }
